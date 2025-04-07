@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Descendant Combinator (space) */
+      /* main p {
+        color: red;
+      } */
+
+      /* Child Combinator (>) */
+      /* main > p {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <p>Outside main 1</p>
+    <main>
+      <p>Direct child main 1</p>
+      <div>
+        <p>Indirect child main 1</p>
+      </div>
+      <p>Direct child main 2</p>
+    </main>
+    <p>Outside main 2</p>
+  </body>
+</html>

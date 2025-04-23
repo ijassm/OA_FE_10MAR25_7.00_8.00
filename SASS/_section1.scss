@@ -1,0 +1,12 @@
+@use "./variables" as *;
+@use "./classes";
+@use "./mixins" as *;
+
+.section1 {
+  @include box(200px, 200px, $color1);
+  @extend .center;
+  .inner-box {
+    @include box(100px, 100px, $color2);
+    @extend .center;
+  }
+}

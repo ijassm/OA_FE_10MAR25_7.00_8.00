@@ -1,3 +1,17 @@
 @use "./section1";
 @use "./section2";
 @use "./section3";
+
+// body {
+//   min-height: 100vh;
+//   @extend .center;
+//   gap: 20px;
+// }
+
+// @for $i from 1 through 100 {
+//   .box#{$i} {
+//     height: 100 * $i + px;
+//     width: 100 * $i + px;
+//     color: red;
+//   }
+// }

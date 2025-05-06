@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let age = parseInt(prompt("enter your age"));
+
+      //   if (age > 0) {
+      //     if (age >= 18) {
+      //       console.log("He/she has vote eligibility😎");
+      //     } else {
+      //       console.log("He/she does not have vote eligibility🙄");
+      //     }
+      //   } else if (age === 0) {
+      //     console.log("Age can't be Zero");
+      //   } else {
+      //     console.log("Invalid age😁");
+      //   }
+
+      const dayArray = ["Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat"];
+
+      const date = new Date();
+      const day = dayArray[date.getDay()];
+
+      //   console.log(date.getDay());
+      //   console.log(dayArray[date.getDay()]);
+
+      switch (date.getDay()) {
+        case 1:
+          console.log(day);
+          break;
+        case 2:
+          console.log(day);
+          break;
+        case 3:
+          console.log(day);
+          break;
+        case 4:
+          console.log(day);
+          break;
+        case 5:
+          console.log(day);
+          break;
+        case 6:
+          console.log(day);
+          break;
+
+        default:
+          console.log("Invalid");
+
+          break;
+      }
+    </script>
+  </body>
+</html>

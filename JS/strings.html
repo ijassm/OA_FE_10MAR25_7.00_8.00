@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const str = "Hello World";
+      //   console.log((str.a = "dfjgf"));
+      //   console.log(str.a);
+      //   console.log(str.length);
+      //   console.log(str.toUpperCase());
+      //   console.log(str.toLowerCase());
+
+      //   console.log(String.prototype);
+      console.log(str.__proto__ === String.prototype);
+      console.log(str.__proto__.__proto__ === Object.prototype);
+      console.log(str.__proto__.__proto__.__proto__);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const arr1 = [1, 2, 3, 4, 5];
+      //   const arr2 = [6, 7, 8, 9, 10];
+
+      //   array concatenation using method
+      //   const arrConcat = arr1.concat(arr2);
+
+      //   join array using for loop
+
+      //   const arrConcat = [];
+
+      //   for (let i = 0; i < arr1.length; i++) {
+      //     arrConcat.push(arr1[i]);
+      //   }
+      //   for (let i = 0; i < arr2.length; i++) {
+      //     arrConcat.push(arr2[i]);
+      //   }
+
+      //   console.log(arrConcat);
+      //   console.log(arr1);
+      //   console.log(arr2);
+
+      //  spread operator
+      //   const arr3 = [...arr1, ...arr2];
+
+      //   console.log(arr3);
+
+      //   const address = {
+      //     city: "Hyderabad",
+      //     street: "Srinagar",
+      //     houseNo: 12,
+      //     area: "KPHB",
+      //     landmark: "KPHB",
+      //     state: "Telangana",
+      //     pincode: 500062,
+      //     country: "India",
+      //   };
+
+      //   const studentObj = {
+      //     firstName: "loguram",
+      //     lastName: "freak",
+      //     age: 15,
+      //     countryCode: "+91",
+      //     mobileNumber: 9876543210,
+      //     email: "loguram@gmail.com",
+      //     skills: ["JavaScript", "Python", "Java", "HTML", "CSS"],
+      //     address: { ...address },
+      //   };
+
+      //   address.city = "Bangalore";
+
+      //   console.log(studentObj);
+
+      //   rest operator
+      //   const arr1 = [1, 2, 3, 4, 5];
+      //   const arr2 = [6, 7, 8, 9, 10];
+      //   const arr3 = [...arr1, ...arr2];
+
+      //   // const a = arr3[0];
+
+      //   const [a, b, , d, ...rest] = arr3; // destructuring
+
+      //   console.log(a);
+      //   console.log(b);
+      //   console.log(d);
+      //   console.log(rest);
+
+      const address = {
+        city: "Hyderabad",
+        street: "Srinagar",
+        houseNo: 12,
+        area: "KPHB",
+        landmark: "KPHB",
+        state: "Telangana",
+        pincode: 500062,
+        country: "India",
+      };
+
+      const studentObj = {
+        firstName: "loguram",
+        lastName: "freak",
+        age: 15,
+        countryCode: "+91",
+        mobileNumber: 9876543210,
+        email: "loguram@gmail.com",
+        skills: ["JavaScript", "Python", "Java", "HTML", "CSS"],
+        address: { ...address },
+      };
+
+      const { address: stuAddress, firstName, lastName } = studentObj; // destructuring
+
+      console.log(stuAddress);
+      console.log(firstName);
+      console.log(lastName);
+    </script>
+  </body>
+</html>

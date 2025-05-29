@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 onclick="greet()">Hello</h1>
+    <script>
+      greet();
+
+      // Function Declaration
+      function greet() {
+        console.log("Hello, World!");
+      }
+
+      (function () {
+        console.log("Goodbye, World!");
+      })(); // Immediately Invoked Function Expression (IIFE)
+
+      // Function Expression
+      const sayGoodbye = function () {
+        console.log("Goodbye, World!");
+      };
+
+      // Arrow Function
+      const sayHello = () => {
+        console.log("Hello from Arrow Function!");
+      };
+
+      // Calling the functions
+      greet(); // Output: Hello, World!
+      sayGoodbye(); // Output: Goodbye, World!
+      sayHello(); // Output: Hello from Arrow Function!
+
+      // Function with parameters
+      function add(a, b) {
+        return a + b;
+      }
+
+      console.log(add(5, 10)); // Output: 15
+    </script>
+  </body>
+</html>

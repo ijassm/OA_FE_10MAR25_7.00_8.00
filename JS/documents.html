@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">Document Object Model(DOM)</h1>
+    <h1 class="title">Document Object Model(DOM)</h1>
+    <h1 class="title">Document Object Model(DOM)</h1>
+    <h2 id="title">Document Object Model(DOM)</h2>
+    <input type="text" name="title" />
+
+    <script>
+      const doc = document;
+      console.log(doc.head);
+      console.log(doc.body);
+
+      // To access element by methods
+      //   const h1 = doc.getElementsByTagName("h1");
+      //   const h1 = doc.getElementsByClassName("title");
+      //   const h1 = doc.getElementsByName("title");
+      //   const h1 = doc.getElementById("title");
+      //   const h1 = doc.querySelector("body > .title");
+      //   const h1 = doc.querySelectorAll("body > .title");
+
+      //   for (let i of h1) i.value = "Hello World";
+
+      //   change the text content of the first h1 element
+      //   h1.textContent = "Hello World";
+      //   h1.style.color = "yellow";
+      //   h1.style.backgroundColor = "black";
+      //   console.log(h1);
+
+      // To create a new element
+      //   const newH1 = doc.createElement("h1");
+      //   newH1.textContent = "New Heading";
+      //   newH1.style.color = "blue";
+      //   doc.body.appendChild(newH1);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [1, 4, 6, 8, 64];
+
+      function double(arr) {
+        const result = [];
+        for (let i = 0; i < arr.length; i++) {
+          result.push(arr[i] * 2);
+        }
+        return result;
+      }
+
+      function triple(arr) {
+        const result = [];
+        for (let i = 0; i < arr.length; i++) {
+          result.push(arr[i] * 3);
+        }
+        return result;
+      }
+
+      function hof(arr, callBackFunc) {
+        const result = [];
+        for (let i = 0; i < arr.length; i++) {
+          result.push(callBackFunc(arr[i], i, arr));
+        }
+        return result;
+      }
+
+      //   console.log(double(arr));
+      //   console.log(triple(arr));
+      //   console.log(
+      //     hof(arr, function (currentValue, index, arr) {
+      //       console.log(currentValue, "currentValue");
+      //       console.log(index, "index");
+      //       console.log(arr, "arr");
+      //       return currentValue * 2;
+      //     })
+      //   );
+
+      Array.prototype.myMap = function hof(callBackFunc) {
+        // console.log(this, "this");
+
+        const result = [];
+        for (let i = 0; i < this.length; i++) {
+          result.push(callBackFunc(this[i], i, this));
+        }
+        return result;
+      };
+
+      //   console.log(arr.map((value) => value * 3));
+      //   console.log(hof(arr, (value) => value * 3));
+
+      console.log(arr.map((value) => value * 2));
+      console.log(arr.myMap((value) => value * 2));
+    </script>
+  </body>
+</html>

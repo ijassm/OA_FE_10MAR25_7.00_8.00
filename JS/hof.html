@@ -54,11 +54,22 @@
         return result;
       };
 
+      Array.prototype.myFilter = function hof(callBackFunc) {
+        const result = [];
+        for (let i = 0; i < this.length; i++) {
+          if (callBackFunc(this[i], i, this)) result.push(this[i]);
+        }
+        return result;
+      };
+
       //   console.log(arr.map((value) => value * 3));
       //   console.log(hof(arr, (value) => value * 3));
 
-      console.log(arr.map((value) => value * 2));
-      console.log(arr.myMap((value) => value * 2));
+      // console.log(arr.map((value) => value * 2));
+      // console.log(arr.myMap((value) => value * 2));
+
+      // console.log(arr.filter((value) => value % 2 === 0));
+      // console.log(arr.myFilter((value) => value % 2 === 0));
     </script>
   </body>
 </html>

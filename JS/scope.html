@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // global
+      //   var a = "global scope";
+      //   let b = "script scope";
+
+      //   {
+      //     let a = "block scope";
+      //   }
+
+      //   function greeting() {
+      //     var a = "local scope";
+      //   }
+
+      //   greeting();
+
+      function mul(a) {
+        return function (b) {
+          return a * b;
+        };
+      }
+
+      const multiplyBy5 = mul(5);
+      const multiplyBy6 = mul(6);
+
+      console.log(multiplyBy5(2));
+      console.log(multiplyBy5(10));
+      console.log(multiplyBy5(8));
+      console.log(multiplyBy6(2));
+      console.log(multiplyBy6(10));
+      console.log(multiplyBy6(8));
+    </script>
+  </body>
+</html>

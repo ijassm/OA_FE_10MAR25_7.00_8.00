@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const promise = new Promise((resolve, reject) => {
+      //     const willAttend = true;
+      //     if (willAttend) {
+      //       setTimeout(() => {
+      //         resolve("Attended the class😎");
+      //       }, 2000);
+      //     } else {
+      //       setTimeout(() => {
+      //         reject("Am not attended the class😐");
+      //       }, 2000);
+      //     }
+      //   });
+
+      //   //   console.log(promise);
+
+      //   promise
+      //     .then((data) => {
+      //       console.log(data);
+      //       const isLearn = false;
+      //       return new Promise((resolve, reject) => {
+      //         if (isLearn) {
+      //           setTimeout(() => {
+      //             resolve("Am learning Promises🤯");
+      //           }, 2000);
+      //         } else {
+      //           reject("Am tired😁");
+      //         }
+      //       });
+      //     })
+      //     .then((data) => console.log(data))
+      //     .catch((error) => console.error(error));
+
+      //   console.log("Code executed sync");
+
+      const data = fetch("https://jsonplaceholder.typicode.com/users")
+        .then((data) => data.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+
+      //   console.log(data);
+    </script>
+  </body>
+</html>

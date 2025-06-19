@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: cursive;
+      }
+
+      .count {
+        font-size: 35px;
+      }
+
+      .counter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        max-width: 400px;
+        margin-inline: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="counter">
+      <h1 id="count">0</h1>
+      <div>
+        <!-- <button onclick="increment()">Increment</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="decrement()">Decrement</button> -->
+        <button class="increment">Increment</button>
+        <button class="reset">Reset</button>
+        <button class="decrement">Decrement</button>
+      </div>
+    </main>
+    <script>
+      const doc = document;
+
+      function increment() {
+        const count = Number(doc.querySelector("#count").textContent);
+        doc.querySelector("#count").textContent = count + 1;
+      }
+
+      function decrement() {
+        const count = Number(doc.querySelector("#count").textContent);
+        if (count > 0) doc.querySelector("#count").textContent = count - 1;
+      }
+
+      function reset() {
+        const count = Number(doc.querySelector("#count").textContent);
+        doc.querySelector("#count").textContent = 0;
+      }
+
+      doc.querySelector(".increment").addEventListener("click", increment);
+      doc.querySelector(".decrement").addEventListener("click", decrement);
+      doc.querySelector(".reset").addEventListener("click", reset);
+    </script>
+  </body>
+</html>

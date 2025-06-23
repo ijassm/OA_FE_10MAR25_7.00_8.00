@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <h1 class="title">Document Object Model(DOM)</h1>
@@ -11,6 +16,8 @@
     <h1 class="title">Document Object Model(DOM)</h1>
     <h2 id="title">Document Object Model(DOM)</h2>
     <input type="text" name="title" />
+
+    <button onclick="toggle()">Toggle</button>
 
     <script>
       const doc = document;
@@ -22,15 +29,15 @@
       // const h1 = doc.getElementsByClassName("title");
       // const h1 = doc.getElementsByName("title");
       // const h1 = doc.getElementById("title");
-      // const h1 = doc.querySelector("body > .title");
+      // const h1 = doc.querySelector(".title");
       // const h1 = doc.querySelectorAll("body > .title");
 
       // for (let i of h1) i.innerHTML = "<s>Hello World</s>";
 
       //   change the text content of the first h1 element
-      // h1.textContent = "Hello World";
-      // h1.style.color = "yellow";
-      // h1.style.backgroundColor = "black";
+      // h1[2].textContent = "Hello World";
+      // h1[0].style.color = "red";
+      // h1[0].style.backgroundColor = "black";
       // console.log(h1);
 
       // To create a new element
@@ -44,6 +51,12 @@
       // newH1.className = newH1.className + " text-center";
       // newH1.classList.add("text-center");
       // newH1.classList.remove("title");
+
+      // const toggle = () => {
+      //   const h1 = doc.querySelector("h1");
+      //   h1.classList.toggle("title");
+      //   console.log(h1);
+      // };
     </script>
   </body>
 </html>

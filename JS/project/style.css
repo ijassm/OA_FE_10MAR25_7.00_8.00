@@ -8,14 +8,27 @@
   max-width: 600px;
 } */
 
+.flex-item .image-container {
+  width: 40%;
+}
+
 .flex-item .image {
-  width: 100%;
   max-width: 300px;
   border-radius: 10px;
   overflow: hidden;
   border: 4px solid burlywood;
 }
 
-/* .flex-item .content {
-  min-width: 200px;
-} */
+.flex-item .content {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .flex-item .image-container {
+    width: 100%;
+  }
+
+  .flex-item .content {
+    width: 100%;
+  }
+}

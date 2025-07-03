@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   class Student {
+      //     name = "hello";
+      //     age = 20;
+
+      //     details() {
+      //       return this.name;
+      //     }
+      //   }
+
+      //   console.log(Student);
+
+      //   const obj1 = new Student();
+
+      //   console.log(obj1);
+
+      function Student(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      Student.prototype.details = function () {
+        return this.name;
+      };
+
+      const obj1 = new Student("ram", 15);
+
+      console.log(obj1);
+    </script>
+  </body>
+</html>
